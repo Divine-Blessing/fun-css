@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Merriweather+Sans:ital@1&display=swap');
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* font-family: 'Merriweather', serif; */
+    font-family: 'Balsamiq Sans', cursive;
+}
+button{
+    border: transparent;
+    letter-spacing: 1.5px;
+    width: 18rem;
+    height: 2.5rem;
+    margin: 30px 5px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.btn{
+    background: rgb(71, 185, 71);
+    color: white;
+}
+.btn:hover{
+    background-color: rgb(59, 158, 59);
+}
+nav{
+    background: transparent;
+    position: absolute;
+}
+/* hero section */
+#hero{
+    background-image: url(../img/orange.jpeg);
+    background-position-y: 75%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+#hero .text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#hero h1{
+    margin-top: 10rem;
+    letter-spacing: .5px;
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: 'Merriweather', serif;
+}
+#hero p{
+    width: 50%;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    font-family: 'Merriweather', serif;
+}
+#hero button{
+    border: transparent;
+    border-radius: 50px;
+    letter-spacing: 1.5px;
+    width: 18rem;
+    height: 2.5rem;
+    margin: 30px 5px;
+    font-weight: 600;
+    font-size: 20px;
+}
+#hero .btn1{
+    background: rgb(71, 185, 71);
+    color: white;
+}
+#hero .btn1:hover{
+    background-color: rgb(59, 158, 59);
+}
+#hero .btn2{
+    color: rgb(102, 102, 121);
+}
+#hero .btn2:hover{
+    color: white;
+    background-color: rgb(102, 102, 121);
+}
+/* end of hero section */
+
+/* second section */
+#second .content{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 150px;
+}
+#second .top, 
+#second .bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#second img{
+    height: 150px;
+}
+#second .txt{
+    margin: 0 20px;
+}
+#second h2{
+    font-weight: 100;
+}
+#second h1{
+    font-weight: 600;
+    margin: 15px 0;
+}
+#second p{
+    width: 90%;
+    margin-bottom: 80px;
+    
+}
+/* end of second section */
+
+/* third section */
+#third{
+    background-color: #f0cf56;
+    color: white;
+    display: flex;
+    font-family: 'Merriweather', serif;
+}
+#third .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 130px;
+}
+#third h1{
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    width: 50%;
+}
+#third p{
+    width: 80%;
+    font-size: 20px;
+}
+#third a{
+    color: tomato;
+    position: relative;
+}
+#third a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: tomato;
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in;
+}
+#third a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+#third a:hover{
+    color: white;
+    transition: transform 0.5s ease-in;
+}
+#third button{
+    border-radius: 50px;
+}
+#third img{
+    height: 100vh;
+    width: 650px;
+}
+/* end of third section */
+
+/* fourth section */
+#fourth .content{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#fourth h1{
+    font-weight: 600;
+    font-size: 3.5rem;
+    letter-spacing: 1.5px;
+    padding-bottom: 20px;
+}
+#fourth h3{
+    font-size: .9rem;
+    width: 45%;
+    text-align: center;
+}
+#fourth img{
+    height: 300px;
+    padding: 30px;
+}
+#fourth button{
+    border-radius: 50px;
+}
+/* end of fourth section */
+
+/* fifth section */
+#fifth{
+    color: white;
+    background-color: #f0cf56;
+    font-family: 'Merriweather', serif;
+    display: flex;
+    align-items: center;
+}
+#fifth .left{
+    margin-left: 150px;
+}
+#fifth h1{
+    font-weight: 600;
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+}
+#fifth p{
+    font-size: 18px;
+    width: 80%;
+}
+#fifth button{
+    border-radius: 50px;
+}
+#fifth .right{
+    margin-right: 150px;
+    /* border: 3px solid red; */
+    padding-top: 20px;
+    border-radius: 180px 120px 100px 180px;
+    background: rgb(59, 158, 59);
+}
+#fifth img{
+    width: 300px;
+}
+/* end of fifth section */
+
+/* sixth section */
+#sixth{
+    display: flex;
+    flex-direction: row;
+}
+#sixth .left{
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#sixth  h1{
+    font-weight: 700;
+    font-size: 2rem;
+    width: 25%;
+    color: rgb(65, 158, 65);
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#sixth span{
+    color: rgb(90, 202, 90);
+}
+#sixth h6{
+    font-size: .7rem;
+    letter-spacing: 7px;
+    color: rgb(65, 158, 65);
+    padding-top: 0;
+    margin-top: 0;
+}
+#sixth .off{
+    background: rgb(90, 202, 90);
+    width: 100px;
+    height: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 15px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+#sixth h5{
+    font-size: 2rem;
+}
+#sixth h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 20px;
+}
+#sixth p{
+    font-size: 13px;
+    width: 80%;
+}
+#sixth .right img{
+    width: 550px;
+    height: 80vh;
+}
+/* end of sixth section */
+
+/* seventh section */
+#seventh{
+    background: rgb(201, 241, 241);
+}
+/* end of seventh section */
